@@ -223,7 +223,8 @@ table {
 		width: 100vw;
 		position: relative;
 		z-index: -1;
-		bottom: 35vw;
+		bottom: 30vw;
+		transform: rotate(180deg);
 	}
 }
 
@@ -233,6 +234,10 @@ table {
   .hamburgerMenu {
     display: none;
   }
+
+	.svg4desk {
+		bottom: 25vw;
+	}
 
   .desktopNav {
     display: block;
