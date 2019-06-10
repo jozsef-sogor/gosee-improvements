@@ -222,7 +222,14 @@ footer a {
 footer li {
 	font-size: 1.5em;
 	line-height: 3em;
+}
 
+footer li a:hover {
+	text-decoration: underline;
+}
+
+footer li a:active {
+	color: #000;
 }
 
 .socialmedia {
@@ -288,6 +295,8 @@ footer ul {
 		bottom: 30vw;
 		transform: rotate(180deg);
 	}
+
+
 
 	#footerFlex{
 		display: flex;
