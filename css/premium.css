@@ -14,7 +14,7 @@ body {
 	overflow-y: hidden;
 }
 
-#notify {
+.notify {
 	border: 2px solid #fff;
 	border-radius: 10px;
 	padding: .7em 1em;
@@ -37,6 +37,11 @@ body {
 
 .hamburgerMenu i {
 	color: #fff;
+	transition: .5s;
+}
+
+.fa-times {
+	display: none;
 }
 
 nav {
