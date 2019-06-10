@@ -128,14 +128,14 @@ table {
 	padding: 1em;
 	height: 2em;
 	background-color: rgba(256,256,256,0.5);
-	
-	
+
+
 }
 #table ul {
 	margin: 1em .2em ;
 	padding: .5em .3em;
-	
-	
+
+
 }
 #table ul :nth-last-child(1){
 	border-radius: 0 0 10px 10px;
@@ -151,6 +151,47 @@ table {
 .svg4desk {
 	display: none;
 }
+
+
+@media only screen and (min-width: 768px) {
+
+	#table {
+		display: flex;
+		margin: auto;
+		width: 100vw;
+		justify-content: center;
+	}
+
+	/*applies styling for all children of #table (for children and grand-children)*/
+	#table > * {
+		margin: .1em .5em;
+		width: 25vw;
+	}
+
+	#table :hover {
+transition: .2s ease-in-out;
+ transform: scale(1.15);
+ -webkit-box-shadow: 0px 15px 43px 1px rgba(0,0,0,0.35);
+-moz-box-shadow: 0px 15px 43px 1px rgba(0,0,0,0.35);
+box-shadow: 0px 15px 43px 1px rgba(0,0,0,0.35);
+	}
+
+	#table > * :hover {
+transition:  0s ease-in-out;
+ transform: scale(1);
+-webkit- box-shadow: none;
+-moz- box-shadow: none;
+ box-shadow: none;
+
+	}
+
+.svg4desk {
+	display: block;
+	width: 100vw;
+	position: relative;
+	z-index: -1;
+}
+
 
 /*
 
@@ -191,11 +232,11 @@ table tr i {
 
 th {
 	text-align: center;
-	
+
 }
-≈coloredRow {	
+≈coloredRow {
 	text-align: center !important;
-	
+
 
 }
 */
