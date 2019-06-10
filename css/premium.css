@@ -133,11 +133,14 @@ table {
 	font-size: .8em;
 
 
+
 }
 
 #table ul {
+
 	margin: 1em .2em;
-	padding: .5em .2em;
+	padding: .5em .3em;
+
 
 
 }
@@ -170,57 +173,50 @@ table {
 	padding: 1em 4em;
 	font-size: 1em;
 
-	
+
 }
-.button:hover{
+
+.button:hover {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	
-}
-
-/*
-
-table td {
-	padding: 1em;
-}
-
-table tr :nth-child(1) {
-	text-align: left;
-	padding: 0;
-	width: 30%;
-	background-color: #60FFD6;
 
 }
 
-table tr :nth-child(2) {
 
-	background-color: #30D5AE;
+@media only screen and (min-width: 768px) {
 
-}
+	#table {
+		display: flex;
+		margin: auto;
+		width: 100vw;
+		justify-content: center;
+	}
 
-table tr :nth-child(3) {
+	/*applies styling for all children of #table (for children and grand-children)*/
+	#table > * {
+		margin: .1em .5em;
+		width: 25vw;
+	}
 
-	background-color: #5B26FF;
+	#table :hover {
+		transition: .2s ease-in-out;
+		transform: scale(1.15);
+		-webkit-box-shadow: 0px 15px 43px 1px rgba(0, 0, 0, 0.35);
+		-moz-box-shadow: 0px 15px 43px 1px rgba(0, 0, 0, 0.35);
+		box-shadow: 0px 15px 43px 1px rgba(0, 0, 0, 0.35);
+	}
 
-}
+	#table > * :hover {
+		transition: 0s ease-in-out;
+		transform: scale(1);
+		-webkit- box-shadow: none;
+		-moz- box-shadow: none;
+		box-shadow: none;
 
-≈gradient{
+	}
 
-
-background:  linear-gradient(210.24deg, #60FFD6 15.75%, #9834FF 98.25%); !important
-
-}
-
-table tr i {
-	background-color: white !important;
-}
-
-th {
-	text-align: center;
-	
-}
-≈coloredRow {	
-	text-align: center !important;
-	
-
-}
-*/
+	.svg4desk {
+		display: block;
+		width: 100vw;
+		position: relative;
+		z-index: -1;
+	}
