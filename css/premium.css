@@ -72,7 +72,7 @@ nav ul li a {
 
 .header__images--logo {
 	width: 70px;
-	padding: 2%;
+	padding: .5em;
 }
 
 #premiumText h1 {
@@ -184,6 +184,10 @@ table {
 
 @media only screen and (min-width: 768px) {
 
+#premiumText h1{
+	width: 30vw;
+}
+
 	#table {
 		display: flex;
 		margin: auto;
@@ -219,4 +223,45 @@ table {
 		width: 100vw;
 		position: relative;
 		z-index: -1;
+		bottom: 35vw;
 	}
+}
+
+
+@media only screen and (min-width: 1024px) {
+	/*Desktop navigation*/
+  .hamburgerMenu {
+    display: none;
+  }
+
+  .desktopNav {
+    display: block;
+    position: absolute;
+    right: 1.5em;
+    top: 1em;
+  }
+
+  .desktopNav ul {
+    font-size: 1.2em;
+  }
+
+  .desktopNav ul li {
+    display: inline-block;
+    padding: .7em 2em;
+    margin: .3em 0;
+  }
+
+  .desktopNav ul li:hover {
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: .5s;
+  }
+
+  .desktopNav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  /*End of desktop navigation*/
+
+}
