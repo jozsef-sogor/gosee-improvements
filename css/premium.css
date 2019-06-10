@@ -90,9 +90,6 @@ nav ul li a {
 	padding: 1em;
 }
 
-#table {
-	padding-top: 5em;
-}
 
 table {
 	width: 90%;
@@ -124,32 +121,60 @@ table {
 	border-radius: 10px;
 }
 
+#table br {
+	background-color: transparent;
+}
+
 #table li {
 	padding: 1em;
 	height: 2em;
-	background-color: rgba(256,256,256,0.5);
-	
-	
+	background-color: rgba(256, 256, 256, 0.5);
+	font-family: 'Comfortaa', sans-serif;
+	font-size: .8em;
+
+
 }
+
 #table ul {
-	margin: 1em .2em ;
-	padding: .5em .3em;
-	
-	
+	margin: 1em .2em;
+	padding: .5em .2em;
+
+
 }
-#table ul :nth-last-child(1){
+
+#table ul :nth-last-child(1) {
 	border-radius: 0 0 10px 10px;
 }
+
 .upg {
 	height: 4em !important;
 	font-family: 'Comfortaa', sans-serif;
-	line-height: 2em;
-	font-size: 1.5em;
+	line-height: 3em;
+	font-size: 1em;
 	background-color: transparent;
 }
 
 .svg4desk {
 	display: none;
+}
+
+.button {
+	background: #5B26FF !important;
+	border-radius: 5px !important;
+	font-family: 'Comfortaa', sans-serif;
+	color: white;
+	width: 100%;
+	margin: auto;
+	cursor: pointer;
+	text-decoration: none;
+	padding: 1em 4em;
+	font-size: 1em;
+
+	
+}
+.button:hover{
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	
 }
 
 /*
