@@ -24,6 +24,7 @@ body {
 
 .desktopNav {
 	display: none;
+	font-family: Comfortaa, sans-serif;
 }
 
 .hamburgerMenu {
@@ -53,6 +54,7 @@ nav {
 	height: 70vh;
 	z-index: 1005;
 	position: absolute;
+	font-family: Comfortaa, sans-serif;
 }
 
 nav ul li {
