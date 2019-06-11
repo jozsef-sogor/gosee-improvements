@@ -3,7 +3,6 @@ $(document).ready(function () {
 
     $('nav').hide();
 
-  //  $("#myVideo").get(0).play();
 //
 //    $(".mute-video").click(function () {
 //        if ($("video").prop('muted')) {
