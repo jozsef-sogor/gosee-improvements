@@ -241,7 +241,7 @@ footer li a:active {
 .socialmedia img{
 	max-height: 2.5em;
 	width: auto;
-	padding: 2em 10vw;
+	padding: 2em 8%;
 }
 
 .socialmedia img:hover{
@@ -369,6 +369,10 @@ footer li {
 
 #soonOn img {
 	max-width: 25vw;
+}
+
+.socialmedia img {
+	padding-top: 5em;
 }
 
 }
