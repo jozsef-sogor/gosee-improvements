@@ -129,6 +129,7 @@ h1 {
     display: grid;
     grid-template-columns: 40px 1fr;
    align-items: center;
+    justify-items: center;
     
     
 }
@@ -141,17 +142,18 @@ h1 {
 
 .faq li.q {
     font-family: 'Comfortaa';
-    background: #eee;
+    background:#60FFD6;
     font-weight: bold;
     font-size: 120%;
     border-bottom: 1px #ddd solid;
     cursor: pointer;
+    
 
 }
 
 .faq li.a {
     font-family: 'Comfortaa';
-    background: #ddd;
+    background: #56E7C1;
     display: none;
 }
 
