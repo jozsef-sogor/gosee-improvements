@@ -124,11 +124,22 @@ h1 {
 
 /* Part 3 styling - FAQ jQuery Slider - styling FAQ list items and questions*/
 
+
+.q {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+   align-items: center;
+    
+    
+}
+
+
 .faq li {
     padding: 20px;
 }
 
 .faq li.q {
+    font-family: 'Comfortaa';
     background: #eee;
     font-weight: bold;
     font-size: 120%;
@@ -138,6 +149,7 @@ h1 {
 }
 
 .faq li.a {
+    font-family: 'Comfortaa';
     background: #ddd;
     display: none;
 }
