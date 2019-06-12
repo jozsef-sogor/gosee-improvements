@@ -128,6 +128,7 @@ h1 {
     padding: 20px;
 }
 
+
 .faq li.q {
     background: #eee;
     font-weight: bold;
@@ -146,13 +147,14 @@ h1 {
     -moz-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
-    -moz-transition: transform 0.5s;
-    -webkit-transition: transform 0.5s;
-    transition: transform 0.5s;
+
 }
 
 
+.faq li img {
 
+    transition: all 0.4s ease;
+}
 
 /*Footer*/
 
