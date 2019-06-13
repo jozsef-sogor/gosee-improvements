@@ -218,7 +218,7 @@ footer {
 	margin-top: -3.5em;
 	z-index: 1;
 	text-align: center;
-	margin: .5em auto -3.5em;
+	margin: 0 auto 5em;
 }
 
 #soonOn img {
@@ -305,9 +305,14 @@ footer ul {
 		z-index: -1;
 		bottom: 30vw;
 		transform: rotate(180deg);
+		margin-bottom: 0;
+		padding-bottom: 0;
 	}
 
-
+footer {
+/*	margin-top: -15vw;*/
+	padding-top: 0;
+}
 
 	#footerFlex {
 		display: flex;
