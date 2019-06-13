@@ -3,57 +3,57 @@ $(document).ready(function () {
 
     $('nav').hide();
 
-//
-//    $(".mute-video").click(function () {
-//        if ($("video").prop('muted')) {
-//            $("video").prop('muted', false);
-//            $(this).addClass('unmute-video');
-//
-//        } else {
-//            $("video").prop('muted', true);
-//            $(this).removeClass('unmute-video');
-//        }
-//        console.log($("video").prop('muted'))
-//    });
+    //
+    //    $(".mute-video").click(function () {
+    //        if ($("video").prop('muted')) {
+    //            $("video").prop('muted', false);
+    //            $(this).addClass('unmute-video');
+    //
+    //        } else {
+    //            $("video").prop('muted', true);
+    //            $(this).removeClass('unmute-video');
+    //        }
+    //        console.log($("video").prop('muted'))
+    //    });
 
 
-//navigation
-$('.fa-bars').click(function(){
-  console.log('clicked');
-  $('.mobileNav').slideToggle();
-  $('body').addClass('mobileOpen');
-  $('.fa-times').css('display' , 'block');
-  $('.fa-bars').css('display' , 'none');
+    //navigation
+    $('.fa-bars').click(function () {
+        console.log('clicked');
+        $('.mobileNav').slideToggle();
+        $('body').addClass('mobileOpen');
+        $('.fa-times').css('display', 'block');
+        $('.fa-bars').css('display', 'none');
 
-});
-
-
-$('.fa-times').click(function(){
-  $('.fa-times').css('display' , 'none');
-  $('.fa-bars').css('display' , 'block');
-});
+    });
 
 
-$('main, .mobileNav, img, .fa-times').click(function() {
-if ($('body').hasClass('mobileOpen')) {
-console.log('mobile dropdown is closed');
-  $('.mobileNav').slideUp();
-  $('body').removeClass('mobileOpen');
-  $('.fa-times').css('display' , 'none');
-  $('.fa-bars').css('display' , 'block');
-}
-});
+    $('.fa-times').click(function () {
+        $('.fa-times').css('display', 'none');
+        $('.fa-bars').css('display', 'block');
+    });
+
+
+    $('main, .mobileNav, img, .fa-times').click(function () {
+        if ($('body').hasClass('mobileOpen')) {
+            console.log('mobile dropdown is closed');
+            $('.mobileNav').slideUp();
+            $('body').removeClass('mobileOpen');
+            $('.fa-times').css('display', 'none');
+            $('.fa-bars').css('display', 'block');
+        }
+    });
 
 
 
-/*
-if ($('body').hasClass('mobileOpen')) {
-  console.log('x');
-}
-else {
-  $('.fa-times').css('display' , 'none');
-  $('.fa-bars').css('display' , 'block');
-}*/
+    /*
+    if ($('body').hasClass('mobileOpen')) {
+      console.log('x');
+    }
+    else {
+      $('.fa-times').css('display' , 'none');
+      $('.fa-bars').css('display' , 'block');
+    }*/
 
 
     //box opening
@@ -121,18 +121,53 @@ else {
 
     //    slideshow animation
 
-//    setInterval(function () {
-//
-//
-//        for (let i = 0; i < 3; i++) { //hide all images
-//            document.querySelectorAll(".slide-img")[i].classList.remove("shown");
-//        }
-//        document.querySelectorAll(".slide-img")[index].classList.add("shown");
-//
-//
-//        index === 3 ? index = 0 : index++;
-//    }, 4000);
-//
+    //    setInterval(function () {
+    //
+    //
+    //        for (let i = 0; i < 3; i++) { //hide all images
+    //            document.querySelectorAll(".slide-img")[i].classList.remove("shown");
+    //        }
+    //        document.querySelectorAll(".slide-img")[index].classList.add("shown");
+    //
+    //
+    //        index === 3 ? index = 0 : index++;
+    //    }, 4000);
+    //
+
+
+
+
+
+    // FAQ slider
+
+
+    // version 2
+    var action = "click";
+    var speed = "500";
+
+    $(document).ready(function () {
+        //question handler
+        $('li.q').on(action, function () {
+            //get next element
+            $(this).next()
+                .slideToggle(speed)
+                //select all other answers
+                .siblings('li.a')
+                .slideUp();
+            //get image for active question
+            var img = $(this).children('img');
+            //remove the 'rotate class for all images except the active
+            $('img').not(img).removeClass('rotate');
+            //Toggle rotate class
+            img.toggleClass('rotate');
+
+        });
+    });
+
+
+
+
+
 
 
 });
