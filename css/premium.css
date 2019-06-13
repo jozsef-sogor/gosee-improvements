@@ -120,12 +120,13 @@ table {
 }
 
 #upgrades {
-	background-color: #60FFD6;
+		background: linear-gradient(50.24deg, #60FFD6 15.75%, #9834FF 98.25%), #5B26FF;
 	border-radius: 10px;
 }
 
 #premium {
-	background: linear-gradient(210.24deg, #60FFD6 15.75%, #9834FF 98.25%), #5B26FF;
+
+    background-color:#9834FF;
 	border-radius: 10px;
 }
 
@@ -363,8 +364,9 @@ footer ul {
 
 	.desktopNav ul li:hover {
 		text-decoration: underline;
-		background-color: rgba(0, 0, 0, 0.6);
+		background-color: #5B26FF;
 		transition: .5s;
+        border-color: #1B0A3B;
 	}
 
 	.desktopNav ul li a {

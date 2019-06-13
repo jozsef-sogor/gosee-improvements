@@ -135,6 +135,8 @@ h1 {
 }
 
 
+
+
 .faq li {
     padding: 20px;
 }
@@ -142,7 +144,7 @@ h1 {
 
 .faq li.q {
     font-family: 'Comfortaa';
-    background:#60FFD6;
+    background:#D8FAF2;
     font-weight: bold;
     font-size: 120%;
     border-bottom: 1px #ddd solid;
@@ -153,8 +155,9 @@ h1 {
 
 .faq li.a {
     font-family: 'Comfortaa';
-    background: #56E7C1;
+    background: white;
     display: none;
+    color: black;
 }
 
 .rotate {
