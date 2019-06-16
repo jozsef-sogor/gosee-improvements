@@ -3,6 +3,9 @@ $(document).ready(function () {
 
     $('nav').hide();
 
+
+
+
     //
     //    $(".mute-video").click(function () {
     //        if ($("video").prop('muted')) {
