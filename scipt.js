@@ -202,3 +202,13 @@ function changeImg(){
 
 // Run function when page loads
 window.onload=changeImg;
+
+$('.submitBtn').click(function(){
+
+if ($('#email').hasClass(':valid')) {
+    console.log('e-mail is valid')
+  }
+else {
+  $('#emailValid').css('display', 'block');
+}
+});
