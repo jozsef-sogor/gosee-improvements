@@ -191,7 +191,6 @@ body {
 
 #notify {
   border: 2px solid #fff;
-  border-radius: 10px;
   padding: .7em 1em;
   max-width: 40%;
   margin: auto;
@@ -199,6 +198,7 @@ body {
 
 .desktopNav {
   display: none;
+  font-family: Comfortaa, sans-serif;;
 }
 
 .hamburgerMenu {
@@ -1217,6 +1217,7 @@ footer img {
     display: inline-block;
     padding: .7em 2em;
     margin: .3em 0;
+    border-radius: 10px;
   }
 
   .desktopNav ul li:hover {
