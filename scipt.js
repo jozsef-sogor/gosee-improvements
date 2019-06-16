@@ -174,18 +174,21 @@ $(document).ready(function () {
 
 var i = 0; 			// Start Point
 var images = [];	// Images Array
-var time = 3000;	// Time Between Switch
+var images2 = [];
+var time = 2000;	// Time Between Switch
 
 
 // Image List
 images[0] = "images/frame1.png";
 images[1] = "images/frame2.png";
 
+images2[0] = "images/frame3.png";
+images2[1] = "images/frame4.png"
 
 // Change Image
 function changeImg(){
 	document.slide.src = images[i];
-
+  document.slide2.src = images2[i];
 
 	// Check If Index Is Under Max
 	if(i < images.length - 1){
@@ -202,3 +205,14 @@ function changeImg(){
 
 // Run function when page loads
 window.onload=changeImg;
+/*
+$('.submitBtn').click(function(){
+
+if ($('#email').hasClass(':valid')) {
+    console.log('e-mail is valid')
+  }
+else {
+  $('#emailValid').css('display', 'block');
+}
+});
+*/

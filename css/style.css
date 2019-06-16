@@ -447,6 +447,10 @@ main h3 {
   margin-bottom: 10%;
 }
 
+#emailValid {
+  display: none;
+}
+
 .content {
   font-family: 'Comfortaa';
   grid-row: 5;
