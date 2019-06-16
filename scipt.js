@@ -170,6 +170,7 @@ $(document).ready(function () {
 });
 
 
+//Carousel
 
 var i = 0; 			// Start Point
 var images = [];	// Images Array
@@ -184,13 +185,13 @@ images[1] = "images/frame2.png";
 // Change Image
 function changeImg(){
 	document.slide.src = images[i];
-    
+
 
 	// Check If Index Is Under Max
 	if(i < images.length - 1){
 	  // Add 1 to Index
-	  i++; 
-	} else { 
+	  i++;
+	} else {
 		// Reset Back To O
 		i = 0;
 	}
@@ -201,7 +202,3 @@ function changeImg(){
 
 // Run function when page loads
 window.onload=changeImg;
-
-
-
-
