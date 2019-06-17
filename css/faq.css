@@ -96,6 +96,9 @@ nav ul li a {
     text-align: center;
     line-height: 2em;
     padding: 1em;
+    font-size: 1.1em;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 
@@ -105,6 +108,14 @@ nav ul li a {
     width: 60%;
     margin: 30px auto;
     overflow: auto;
+}
+
+
+#container h2 {
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 1.5em;
+
+
 }
 
 /* Part 3 styling - FAQ jQuery Slider - styling h1-tag*/
@@ -128,32 +139,61 @@ h1 {
 .q {
     display: grid;
     grid-template-columns: 40px 1fr;
-   align-items: center;
-    justify-items: center;
-    
-    
+    align-items: center;
+
+
+
 }
 
 
+.faq {
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
 
+.faq2 {
+    margin-top: 2%;
+}
 
 .faq li {
+    padding: 20px;
+}
+
+.faq2 li {
     padding: 20px;
 }
 
 
 .faq li.q {
     font-family: 'Comfortaa';
-    background:#D8FAF2;
+    background: rgba(59, 30, 115, 0.15);
     font-weight: bold;
     font-size: 120%;
     border-bottom: 1px #ddd solid;
     cursor: pointer;
-    
+
+
+}
+
+.faq2 li.q {
+    font-family: 'Comfortaa';
+    background: rgba(59, 30, 115, 0.15);
+    font-weight: bold;
+    font-size: 120%;
+    border-bottom: 1px #ddd solid;
+    cursor: pointer;
+
 
 }
 
 .faq li.a {
+    font-family: 'Comfortaa';
+    background: white;
+    display: none;
+    color: black;
+}
+
+.faq2 li.a {
     font-family: 'Comfortaa';
     background: white;
     display: none;
@@ -238,7 +278,7 @@ footer ul {
 
     #premiumText h1 {
 
-        text-align: left;
+       
     }
 
     #table {
