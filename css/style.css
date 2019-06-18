@@ -418,10 +418,16 @@ main h3 {
   font-size: 0.9em;
 }
 
+.plan, .play, .share {
+     margin-left: 8%;
+    margin-right: 8%;
+}
+
 .plan {
   display: grid;
   grid-template-columns: 1fr;
   grid-row: 5;
+ 
 }
 
 .svg2 {
@@ -681,6 +687,18 @@ form input {
   font-size: .7em;
 }
 
+.lid h3 {
+    color: white;
+    text-align: center;
+    font-size: .6em;
+    padding-top: 4vh;
+} 
+
+.span2 {
+    color: #260E4B;
+}
+
+
 #gdpr {
   width: 80%;
   margin: 2em auto;
@@ -791,7 +809,7 @@ footer a {
 }
 
 footer li {
-	font-size: 1.5em;
+	font-size: 1.1em;
 	line-height: 3em;
 }
 
@@ -810,7 +828,7 @@ footer li a:active {
 .socialmedia img {
 	max-height: 2.5em;
 	width: auto;
-	padding: 2em 8%;
+	padding: 2em 3%;
 }
 
 .socialmedia img:hover {
@@ -1049,7 +1067,7 @@ footer ul {
   }
 
   .play {
-    margin-top: 20%;
+    margin-top: 10%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column: 1 / 3;
@@ -1136,7 +1154,15 @@ footer ul {
 	}
 
   /*styling the treasure*/
-  .box {
+  
+    .lid h3 {
+    color: white;
+    text-align: center;
+    font-size: 1.1em;
+    padding-top: 4vh;
+} 
+    
+    .box {
     width: 50vw;
     max-width: 50%;
     transition: .5s linear;
@@ -1275,6 +1301,7 @@ footer ul {
   .content2 p {
     font-size: 1.3em;
     text-align: left;
+      margin-right: 20%;
   }
 
   .content3 h2 {
@@ -1384,6 +1411,7 @@ footer ul {
   .appmockup3 {
     width: auto;
     max-height: 80vh;
+      margin-right: 10%;
   }
 
   #pleasework {
@@ -1422,6 +1450,13 @@ footer ul {
   #consent {
     padding: 1.5em;
   }
+    
+    .lid h3 {
+    color: white;
+    text-align: center;
+    font-size: 1.4em;
+    padding-top: 10vh;
+} 
 
   .body {
     height: 25vh;
