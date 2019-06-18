@@ -294,6 +294,7 @@ footer ul {
 		margin: auto;
 		width: 100vw;
 		justify-content: center;
+		padding-bottom: 5em;
 	}
 
 	/*applies styling for all children of #table (for children and grand-children)*/
@@ -302,17 +303,9 @@ footer ul {
 		width: 25vw;
 	}
 
-	.grid {
-		display: grid;
-		grid-template-columns: 10% 90%;
-	}
-
-	#table:nth-child(2) {
-		grid-column: 2;
-
-		justify-self: end;
-	}
-
+#table li {
+	font-size: ;
+}
 
 
 	#table :hover {
