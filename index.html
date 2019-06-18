@@ -42,6 +42,8 @@
 
             <div class="hamburgerMenu">
                 <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+
             </div>
 
             <nav class="mobileNav">
@@ -229,7 +231,8 @@
             <div class="box" id="treasure">
                 <div class="lid"><h3>   <span class="span2">Open</span> the <span class="span2">loot box</span> and let us notify you.</h3></div>
                 <div class="inside"></div>
-                <div class="body"></div>
+                <div class="body"> <p id="text"><span>Open</span> the <span>loot box</span> and let us notify you.</p>
+</div>
                 <div class="lock"></div>
             </div>
 
@@ -237,22 +240,21 @@
             <div id="signUp" class="modal">
                 <button id="closeModal">X</button>
 
-                <form action="submit" class="form">
+                <form action="submit" class="form" id="form1">
                     <h4>Sign Up</h4>
                     <p class="message">Do you want to be a founding user of our game-changing travel app? <br><br>
 
                         Leave us your email so you will not miss the launch.
                     </p> <br>
                     <p>Name</p>
-                    <input type="text" placeholder="Firstname Lastname" id="name" required>
+                    <input type="text" placeholder="Firstname Lastname" name="name" id="name" required>
                     <p>E-mail</p>
-                    <input type="email" placeholder="example@example.com" value="" id="email" required>
-                    <p id="emailValid">Please enter a valid e-mail address.</p>
+                    <input type="email" placeholder="example@example.com" value="" name="email" id="email" required>
                     <div id="gdpr">
                         <input type="checkbox" id="consent" name="consent" value="">
                         <p>I consent to the processing of my name and e-mail address in order to receive updates about the release of the app and/or promotional offers.</p>
                     </div>
-                    <button type="button" name="submitSignUp" class="submitBtn">Sign me up</button>
+                    <input type="submit"  form="form1" name="submitSignUp" id="submitBtn"><!--Sign me up</button>-->
                 </form>
             </div> <!-- End of .modal-->
         </div>
@@ -299,7 +301,7 @@
             <div id="footerFlex">
                 <ul class="extras">
                     <li><a href="">Privacy Policy</a></li>
-                    <li><a href="">Contact Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="">Career</a></li>
                 </ul>
 
@@ -331,6 +333,19 @@
         document.getElementsByTagName("head")[0].appendChild(mf);
     })();
 </script>
+
+
+
+    <script type="text/javascript">
+        window._mfq = window._mfq || [];
+        (function() {
+            var mf = document.createElement("script");
+            mf.type = "text/javascript"; mf.async = true;
+            mf.src = "//cdn.mouseflow.com/projects/ee49eb58-443b-463b-9c95-ab2ea4c0413f.js";
+            document.getElementsByTagName("head")[0].appendChild(mf);
+        })();
+    </script>
+
 
 </body>
 

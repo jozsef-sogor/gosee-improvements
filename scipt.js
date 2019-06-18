@@ -100,23 +100,31 @@ $(document).ready(function () {
         $(".box").removeClass("s");
     });
 
+//submitting the form
 
+$('#submitBtn').click(function() {
+  $('#form1').submit();
+  $('#form1').reset();
+  console.log('submitted');
+})
+
+//do submit function (inputs field empty) + alert:succesful
 
     $('input[name=consent]').click(function () {
         if ($(this).is(":checked")) {
             console.log('checked');
-            $('.submitBtn').css({
+            $('#submitBtn').css({
                 'color': 'white',
                 'cursor': 'pointer'
             });
-            $('.submitBtn').attr('disabled', 'false');
+            $('#submitBtn').attr('disabled', 'false');
         } else {
             console.log('unchecked');
-            $('.submitBtn').css({
+            $('#submitBtn').css({
                 'color': 'rgba(0,0,0,0.1)',
                 'cursor': 'not-allowed'
             });
-            $('.submitBtn').attr('disabled', 'true');
+            $('#submitBtn').attr('disabled', 'true');
 
         }
     });
@@ -169,7 +177,7 @@ $(document).ready(function () {
 
 });
 
-
+/*
 //Carousel
 
 var i = 0; 			// Start Point
@@ -206,7 +214,7 @@ function changeImg(){
 // Run function when page loads
 window.onload=changeImg;
 /*
-$('.submitBtn').click(function(){
+$('#submitBtn').click(function(){
 
 if ($('#email').hasClass(':valid')) {
     console.log('e-mail is valid')
@@ -216,3 +224,40 @@ else {
 }
 });
 */
+
+
+
+//sending e-mail from contact form
+var name = $('#contactName').val();
+var email = $('#contactEmail').val();
+var subject = $('#contactSubject').val();
+
+$('#sendMail').click(function() {
+  $.ajax({
+  type: 'POST',
+  url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+  data: {
+    'key': "481e933c007a32b93b3aaa9b3fdc58e0-us3",
+    'message': {
+      'from_email': 'sogor.jozsef98@gmail.com',
+      'to': [
+          {
+            'email': email,
+            'name': name,
+            'type': 'to'
+          },
+          {
+            'email': 'RECIPIENT_NO_2@EMAIL.HERE',
+            'name': 'ANOTHER RECIPIENT NAME (OPTIONAL)',
+            'type': 'to'
+          }
+        ],
+      'autotext': 'true',
+      'subject': subject,
+      'html': 'YOUR EMAIL CONTENT HERE! YOU CAN USE HTML!'
+    }
+  }
+ }).done(function(response) {
+   console.log(response); // if you're into that sorta thing
+ });
+});
