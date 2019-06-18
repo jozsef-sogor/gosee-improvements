@@ -7,6 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GoSee | Plan your trip with ease</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142050487-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-142050487-1');
+</script>
+    <!--End of Global site tag-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
@@ -32,6 +42,8 @@
 
             <div class="hamburgerMenu">
                 <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+
             </div>
 
             <nav class="mobileNav">
@@ -68,16 +80,18 @@
             <section class="section__header">
 
                 <div id="video">
-                   
-                    <video loop muted="muted" controls playsinline id="myVideo">
+
+                    <video loop muted="muted" controlsList="noplay, nopause, noseeking" playsinline id="myVideo">
                         <source src="video/goseevideo2.mp4" type="video/mp4">
                         <!--  </source>-->
                     </video>
 
+
+
                     <div class="introtext">
                         <h2>Don't listen to what they say.</h2>
                         <h1>GO SEE</h1>
-                        <p id="adam">Credits: Adam Sadílek</p>
+                        <p id="adam">video &copy;Adam Sadílek</p>
                     </div>
                 </div>
                 <script>
@@ -138,8 +152,10 @@
 
                 <section class="plan">
 
+                    <img class="appmockup1" name="slide" data-aos="fade-right" />
 
-                    <img class="appmockup1" src="images/frame1.png" alt="appmockup1" data-aos="fade-right">
+
+                    <!--                    <img class="appmockup1" src="images/frame1.png" alt="appmockup1" data-aos="fade-right">-->
 
                     <div class="content" data-aos="zoom-in-up">
                         <div class="titlepic1">
@@ -175,8 +191,11 @@
 
 
                 <section class="share">
-                    <img class="appmockup3" src="images/frame3.png" alt="appmockup3" data-aos="fade-right">
 
+
+                    <img class="appmockup3" name="slide2" data-aos="fade-right" />
+
+                    <!--                  <img class="appmockup3" src="images/frame3.png" alt="appmockup3" data-aos="fade-right">-->
                     <div class="content3" data-aos="zoom-in-up">
                         <h2>Seize the moment!</h2>
                         <p data-aos="zoom-in-up">Save the progress in repositories and <span>share</span> inspiring new places for the rest to see.<br><br>
@@ -199,7 +218,7 @@
 
                             Want to make sure you don’t miss the official app release?<br><br>
 
-                            <span>Open</span> the <span>loot box</span> and let us notify you.</p>
+                         </p>
                     </div>
 
                 </section>
@@ -210,11 +229,10 @@
 
 
             <div class="box" id="treasure">
-                <div class="lid"></div>
-                <div class="inside">
-
-                </div>
-                <div class="body"></div>
+                <div class="lid"><h3>   <span class="span2">Open</span> the <span class="span2">loot box</span> and let us notify you.</h3></div>
+                <div class="inside"></div>
+                <div class="body"> <p id="text"><span>Open</span> the <span>loot box</span> and let us notify you.</p>
+</div>
                 <div class="lock"></div>
             </div>
 
@@ -222,25 +240,27 @@
             <div id="signUp" class="modal">
                 <button id="closeModal">X</button>
 
-                <form action="submit" class="form">
+                <form action="submit" class="form" id="form1">
                     <h4>Sign Up</h4>
                     <p class="message">Do you want to be a founding user of our game-changing travel app? <br><br>
 
                         Leave us your email so you will not miss the launch.
                     </p> <br>
-                    <input type="text" placeholder="Name:" id="name">
-                    <input type="text" placeholder="E-mail:" value="" id="email">
+                    <p>Name</p>
+                    <input type="text" placeholder="Firstname Lastname" name="name" id="name" required>
+                    <p>E-mail</p>
+                    <input type="email" placeholder="example@example.com" value="" name="email" id="email" required>
                     <div id="gdpr">
                         <input type="checkbox" id="consent" name="consent" value="">
                         <p>I consent to the processing of my name and e-mail address in order to receive updates about the release of the app and/or promotional offers.</p>
                     </div>
-                    <button type="button" name="submitSignUp" class="submitBtn">Sign me up</button>
+                    <input type="submit"  form="form1" name="submitSignUp" id="submitBtn"><!--Sign me up</button>-->
                 </form>
             </div> <!-- End of .modal-->
         </div>
         <!--End of #pleasework-->
-        <footer>
 
+        <div class="support">
 
             <img class="svg4" src="graphics/svg3.svg" alt="svg4">
             <img class="svg4desk" src="images/svg4desk.svg" alt="svg4 desktop">
@@ -252,9 +272,21 @@
             <img class="sponsor3" src="images/sponsor3.png" alt="aarhusuniv">
 
 
-            <p>Soon on</p>
 
+
+
+        </div>
+
+        <div id="soonOn">
+            <p>Soon on</p>
             <img class="google" src="images/google.png" alt="googleicon">
+        </div>
+
+        <footer>
+
+
+
+
 
             <div class="socialmedia">
 
@@ -264,6 +296,20 @@
 
 
                 <a href="https://www.youtube.com/"><img alt="ytbicon" src="images/linkedin.png"></a>
+            </div>
+
+            <div id="footerFlex">
+                <ul class="extras">
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="">Career</a></li>
+                </ul>
+
+                <ul class="footerNav">
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Premium</a></li>
+                    <li><a href="">News</a></li>
+                </ul>
             </div>
         </footer>
     </div>
@@ -276,8 +322,20 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
-
     </script>
+
+
+
+    <script type="text/javascript">
+        window._mfq = window._mfq || [];
+        (function() {
+            var mf = document.createElement("script");
+            mf.type = "text/javascript"; mf.async = true;
+            mf.src = "//cdn.mouseflow.com/projects/ee49eb58-443b-463b-9c95-ab2ea4c0413f.js";
+            document.getElementsByTagName("head")[0].appendChild(mf);
+        })();
+    </script>
+
 
 </body>
 
