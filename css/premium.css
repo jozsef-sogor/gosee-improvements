@@ -34,7 +34,6 @@ body {
 	right: 1px;
 	z-index: 1010;
 	font-size: 1.5em;
-	display: flex;
 }
 
 .hamburgerMenu i {
@@ -42,18 +41,8 @@ body {
 	transition: .5s;
 }
 
-.hamburgerMenu img {
-	justify-content: flex-start;
-}
-
-.fa-bars {
-	justify-content: flex-end;
-}
-
 .fa-times {
 	display: none;
-	justify-content: flex-end;
-
 }
 
 nav {
@@ -82,6 +71,17 @@ nav ul li a {
 	text-decoration: none;
 	color: #fff;
 }
+
+
+.mobileNav img {
+		width: 70px;
+		padding: .5em;
+		position: fixed;
+left: -0.2em;
+top: -0.2em
+}
+
+
 
 .header__images {
 	z-index: 999;
