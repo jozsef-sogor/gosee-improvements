@@ -930,7 +930,10 @@ footer ul {
 @media only screen and (min-width: 768px) {
   #notify {
     max-width: 20%;
+      
   }
+    
+    
 
   #adam {
     font-size: 0.3em;
@@ -1352,7 +1355,7 @@ footer ul {
 
   .desktopNav ul li:hover {
     text-decoration: underline;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: #5B26FF;;
     transition: .5s;
   }
 
