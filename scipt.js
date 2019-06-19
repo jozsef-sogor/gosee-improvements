@@ -239,7 +239,7 @@ $('#sendMail').click(function() {
   data: {
     'key': "481e933c007a32b93b3aaa9b3fdc58e0-us3",
     'message': {
-      'from_email': 'sogor.jozsef98@gmail.com',
+      'from_email': 'gosee@gmail.com',
       'to': [
           {
             'email': email,
