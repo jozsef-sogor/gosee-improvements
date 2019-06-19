@@ -25,38 +25,37 @@ $(document).ready(function () {
         console.log('clicked');
         $('.mobileNav').slideToggle();
         $('body').addClass('mobileOpen');
-        $('.fa-times').css('display', 'block');
+        $('.fa-times-circle').css('display', 'block');
         $('.fa-bars').css('display', 'none');
 
     });
 
 
-    $('.fa-times').click(function () {
-        $('.fa-times').css('display', 'none');
+    $('.fa-times-circle').click(function () {
+        $('.fa-times-circle').css('display', 'none');
         $('.fa-bars').css('display', 'block');
     });
 
 
-    $('main, .mobileNav, img, .fa-times').click(function () {
+    $('main, .mobileNav, img, .fa-times-circle').click(function () {
         if ($('body').hasClass('mobileOpen')) {
             console.log('mobile dropdown is closed');
             $('.mobileNav').slideUp();
             $('body').removeClass('mobileOpen');
-            $('.fa-times').css('display', 'none');
+            $('.fa-times-circle').css('display', 'none');
             $('.fa-bars').css('display', 'block');
         }
     });
 
 
 
-    /*
     if ($('body').hasClass('mobileOpen')) {
       console.log('x');
     }
     else {
-      $('.fa-times').css('display' , 'none');
+      $('.fa-times-circle').css('display' , 'none');
       $('.fa-bars').css('display' , 'block');
-    }*/
+    }
 
 
     //box opening
@@ -177,13 +176,12 @@ $('#submitBtn').click(function() {
 
 });
 
-/*
 //Carousel
 
 var i = 0; 			// Start Point
 var images = [];	// Images Array
 var images2 = [];
-var time = 2000;	// Time Between Switch
+var time = 3000;	// Time Between Switch
 
 
 // Image List
