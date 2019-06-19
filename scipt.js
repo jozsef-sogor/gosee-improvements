@@ -177,7 +177,7 @@ $('#submitBtn').click(function() {
 });
 
 //Carousel
-
+/*
 var i = 0; 			// Start Point
 var images = [];	// Images Array
 var images2 = [];
@@ -211,6 +211,9 @@ function changeImg(){
 
 // Run function when page loads
 window.onload=changeImg;
+
+
+
 /*
 $('#submitBtn').click(function(){
 
@@ -231,7 +234,7 @@ var email = $('#contactEmail').val();
 var subject = $('#contactSubject').val();
 
 $('#sendMail').click(function() {
-  $.ajax({
+/*  $.ajax({
   type: 'POST',
   url: 'https://mandrillapp.com/api/1.0/messages/send.json',
   data: {
@@ -257,5 +260,19 @@ $('#sendMail').click(function() {
   }
  }).done(function(response) {
    console.log(response); // if you're into that sorta thing
- });
+ }); */
+
+ Email.send({
+     Host : "smtp.elasticemail.com",
+     Username : "sogor.jozsef98@gmail.com",
+     Password : "1bc29a1d-a738-478d-a863-a12e75ab7963",
+     To : email,
+     From : "sogor.jozsef@hotmail.com",
+     Subject : subject + "verification",
+     Body :  "And this is the body"
+ }).then(
+   message => alert("message")
+ );
+
+
 });
