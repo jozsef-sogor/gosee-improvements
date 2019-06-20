@@ -564,7 +564,11 @@ footer ul {
 	border-radius: 10px;
 	font-family: 'Comfortaa', sans-serif;
 	border: 2px solid rgba(0,0,0,0.1);
-    color: white;
+   
+}
+
+#sendMail {
+     color: white;
 }
 
 #contact input :focus {
