@@ -38,7 +38,7 @@ $('#sendMail').click(function() {
      Username : "sogor.jozsef98@gmail.com",
      Password : "1bc29a1d-a738-478d-a863-a12e75ab7963",
      To : email,
-     From : "gosee@gmail.com",
+     From : "sogor.jozsef98@gmail.com",
      Subject : subject + "verification",
      Body :  "Dear" + name + "we have recieved your inqury. We'll get back to you as soon as possible. Best regards, GoSee"
  }).then(
