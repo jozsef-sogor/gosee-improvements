@@ -446,7 +446,7 @@ main h3 {
   display: grid;
   grid-template-columns: 1fr;
   grid-row: 5;
- 
+
 }
 
 .svg2 {
@@ -711,7 +711,7 @@ form input {
     text-align: center;
     font-size: .6em;
     padding-top: 4vh;
-} 
+}
 
 .span2 {
     color: #260E4B;
@@ -816,6 +816,11 @@ footer {
 	z-index: 1;
 	text-align: center;
 	margin: 0 auto 5em;
+}
+
+#soonOn > p {
+  margin: 2em auto -2em;
+
 }
 
 #soonOn img {
@@ -949,10 +954,10 @@ footer ul {
 @media only screen and (min-width: 768px) {
   #notify {
     max-width: 20%;
-      
+
   }
-    
-    
+
+
 
   #adam {
     font-size: 0.3em;
@@ -1176,14 +1181,14 @@ footer ul {
 	}
 
   /*styling the treasure*/
-  
+
     .lid h3 {
     color: white;
     text-align: center;
     font-size: 1.1em;
     padding-top: 4vh;
-} 
-    
+}
+
     .box {
     width: 50vw;
     max-width: 50%;
@@ -1441,7 +1446,7 @@ footer ul {
     background-position: 20% 126%;
     background-repeat: no-repeat;
     background-size: auto 80%;
-     
+
   }
 
   .sponsor1, .sponsor2, .sponsor3 {
@@ -1473,13 +1478,13 @@ footer ul {
   #consent {
     padding: 1.5em;
   }
-    
+
     .lid h3 {
     color: white;
     text-align: center;
     font-size: 1.4em;
     padding-top: 10vh;
-} 
+}
 
   .body {
     height: 25vh;
