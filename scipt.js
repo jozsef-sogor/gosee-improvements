@@ -177,7 +177,7 @@ $('#submitBtn').click(function() {
 });
 
 //Carousel
-/*
+
 var i = 0; 			// Start Point
 var images = [];	// Images Array
 var images2 = [];
