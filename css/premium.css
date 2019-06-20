@@ -51,7 +51,6 @@ body {
 	display: inline-block;
 	font-style: normal;
 	font-variant: normal;
-	text-rendering: auto;
 	line-height: 1;
 	color: white;
 	font-size: 1.5em;
@@ -180,7 +179,7 @@ table {
 	background-color: rgba(256, 256, 256, 0.5);
 	font-family: 'Comfortaa', sans-serif;
 	font-size: .8em;
-    
+
 
 
 
@@ -204,7 +203,6 @@ table {
 	line-height: 4.5em;
 	font-size: 1em;
 	background-color: transparent;
-	text-stroke: 1px white;
 	-webkit-text-stroke: 1px white;
 	-moz-text-stroke: 1px white;
 
@@ -232,7 +230,7 @@ table {
 	text-decoration: none;
 	padding: 1em 4em;
 	font-size: 1em;
-    
+
 
 }
 
@@ -249,7 +247,7 @@ table {
 footer {
 	background-color: #1B0A3B;
 	text-align: center;
-	color: fff;
+	color: #fff;
 	overflow-x: hidden;
 	font-family: Comfortaa, sans-serif;
 	margin-top: 3em;
@@ -312,7 +310,7 @@ footer ul {
 
 @media only screen and (min-width: 937px) {
 
-    
+
     .mobileNav img {
 	width: 65px;
 	padding: .5em;
@@ -321,28 +319,28 @@ footer ul {
 	top: -0.1em;
 }
 
-    
+
     .header__images--logo {
 	width: 65px;
 	padding: 1em;
 	padding-left: 3.5em;
 }
-    
+
     #premiumText p {
         font-size: 1em;
     }
-    
+
 	#premiumText h1 {
 		font-size: 1.5em;
 		margin: auto;
 		text-align: center;
 	}
-    
-    .button { 
+
+    .button {
     margin-left: 2vw;
-       
+
     }
-    
+
    li a .button{
         margin-top: 5vh;
     }
@@ -364,7 +362,7 @@ footer ul {
 	#table li {
 		text-align: left;
         font-size: .8em;
-        
+
 	}
 
 
@@ -379,8 +377,8 @@ footer ul {
 	#table > * :hover {
 		transition: 0s ease-in-out;
 		transform: scale(1);
-		-webkit- box-shadow: none;
-		-moz- box-shadow: none;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
 		box-shadow: none;
 
 	}
@@ -428,8 +426,8 @@ footer ul {
 
 @media only screen and (min-width: 1024px) {
 
-    
-    
+
+
     .upg {
 	height: 4em !important;
 	line-height: 4.5em;
@@ -440,7 +438,7 @@ footer ul {
 	-moz-text-stroke: 1px white;
 
 }
-    
+
     #table li {
 	padding: 1em;
 	height: 2em;
@@ -452,10 +450,10 @@ footer ul {
 
 
 }
-    
-    
-   
-    
+
+
+
+
     #premiumText p {
 	font-family: 'Comfortaa', sans-serif;
 	text-align: center;
@@ -464,10 +462,10 @@ footer ul {
 	margin: auto;
         font-size: 1.2em;
         width: 100%;
-        
-        
+
+
 }
-    
+
     #premiumText h1 {
 	font-family: 'Bowlby One SC', cursive;
 	font-size: 1.9em;
@@ -476,9 +474,9 @@ footer ul {
 	margin: auto;
 	text-align: center;
 }
-    
-    
-    
+
+
+
 	/*Desktop navigation*/
 	.hamburgerMenu {
 		display: none;
@@ -525,7 +523,7 @@ footer ul {
     footer li {
         font-size: 1em;
     }
-    
+
 	#soonOn img {
 		max-width:20vw;
 	}
