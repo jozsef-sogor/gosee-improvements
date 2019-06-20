@@ -985,6 +985,17 @@ footer ul {
     max-width: 20%;
 
   }
+    
+    .support {
+        margin-bottom: 5em;
+    }
+    
+    
+    .header__images--logo { 
+    width: 70px;
+    }
+    
+    
 
 
 
