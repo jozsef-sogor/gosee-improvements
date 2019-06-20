@@ -202,6 +202,10 @@ body {
      border-radius: 10px;
 }
 
+.notify:hover{
+  background-color: #5B26FF !important;
+}
+
 .desktopNav {
   display: none;
   font-family: 'Comfortaa', sans-serif;
@@ -1405,7 +1409,7 @@ footer ul {
 
   .desktopNav ul li:hover {
     text-decoration: underline;
-    background-color: #5B26FF;;
+    background-color: rgba(0,0,0,0.3);
     transition: .5s;
   }
 

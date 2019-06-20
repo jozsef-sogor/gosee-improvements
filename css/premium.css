@@ -22,6 +22,10 @@ body {
 	margin: auto;
 }
 
+.notify:hover{
+  background-color: #5B26FF !important;
+}
+
 .desktopNav {
 	display: none;
 	font-family: Comfortaa, sans-serif;
@@ -219,6 +223,8 @@ table {
 	display: none;
 }
 
+
+
 .button {
 	background: #5B26FF !important;
 	border-radius: 5px !important;
@@ -230,7 +236,7 @@ table {
 	text-decoration: none;
 	padding: 1em 4em;
 	font-size: 1em;
-
+	white-space: nowrap;
 
 }
 
@@ -336,10 +342,7 @@ footer ul {
 		text-align: center;
 	}
 
-    .button {
-    margin-left: 2vw;
 
-    }
 
    li a .button{
         margin-top: 5vh;
@@ -433,7 +436,6 @@ footer ul {
 	line-height: 4.5em;
 	font-size: 1.5em;
 	background-color: transparent;
-	text-stroke: 1px white;
 	-webkit-text-stroke: 1px white;
 	-moz-text-stroke: 1px white;
 
@@ -506,7 +508,7 @@ footer ul {
 
 	.desktopNav ul li:hover {
 		text-decoration: underline;
-		background-color: #5B26FF;
+		background-color: rgba(0,0,0,0);
 		transition: .5s;
 		border-color: #1B0A3B;
 	}
