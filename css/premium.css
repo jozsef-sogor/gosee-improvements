@@ -30,7 +30,7 @@ body {
 .hamburgerMenu {
 	z-index: 1006;
 	position: absolute;
-	padding: 1.3em;
+	padding: 1em;
 	right: 1px;
 	z-index: 1010;
 	font-size: 1.5em;
@@ -54,6 +54,15 @@ body {
 	line-height: 1;
 	color: white;
 	font-size: 1.5em;
+
+}
+
+.fa-check {
+        padding: .7em;
+}
+
+.fa-times {
+    padding: .7em;
 }
 
 .far {
@@ -90,11 +99,11 @@ nav ul li a {
 
 
 .mobileNav img {
-	width: 70px;
+	width: 55px;
 	padding: .5em;
 	position: fixed;
 	left: -0.2em;
-	top: -0.2em
+	top: -0.1em;
 }
 
 
@@ -105,14 +114,14 @@ nav ul li a {
 }
 
 .header__images--logo {
-	width: 70px;
+	width: 55px;
 	padding: 1em;
-	padding-left: 3.5em;
+	padding-left: .7em;
 }
 
 #premiumText h1 {
 	font-family: 'Bowlby One SC', cursive;
-	font-size: 1.9em;
+	font-size: 1.3em;
 	width: 50vw;
 	padding: 1em 0.5em;
 	margin: auto;
@@ -126,6 +135,7 @@ nav ul li a {
 	line-height: 2em;
 	padding: 1em;
 	margin: auto;
+    font-size: .7em;
 }
 
 /*Start of the PREMIUM TABLE*/
@@ -168,7 +178,8 @@ table {
 	height: 2em;
 	background-color: rgba(256, 256, 256, 0.5);
 	font-family: 'Comfortaa', sans-serif;
-	font-size: 1.2em;
+	font-size: .8em;
+
 
 
 
@@ -190,7 +201,7 @@ table {
 .upg {
 	height: 4em !important;
 	line-height: 4.5em;
-	font-size: 1.5em;
+	font-size: 1em;
 	background-color: transparent;
 	-webkit-text-stroke: 1px white;
 	-moz-text-stroke: 1px white;
@@ -248,7 +259,7 @@ footer {
 	margin-top: -3.5em;
 	z-index: 1;
 	text-align: center;
-	margin: 0 auto 5em;
+	margin: 0 auto -3em;
 }
 
 #soonOn img {
@@ -261,8 +272,8 @@ footer a {
 }
 
 footer li {
-	font-size: 1.5em;
-	line-height: 3em;
+	font-size: .8em;
+	line-height: 1.7em;
 }
 
 footer li a:hover {
@@ -279,7 +290,7 @@ footer li a:active {
 
 .socialmedia img {
 	max-height: 2.5em;
-	width: auto;
+	width: 30px;
 	padding: 2em 8%;
 }
 
@@ -289,7 +300,7 @@ footer li a:active {
 }
 
 footer ul {
-	padding: 2em;
+	padding: 1.5em;
 }
 
 #email:valid {
@@ -299,11 +310,40 @@ footer ul {
 
 @media only screen and (min-width: 937px) {
 
+
+    .mobileNav img {
+	width: 65px;
+	padding: .5em;
+	position: fixed;
+	left: 1.4em;
+	top: -0.1em;
+}
+
+
+    .header__images--logo {
+	width: 65px;
+	padding: 1em;
+	padding-left: 3.5em;
+}
+
+    #premiumText p {
+        font-size: 1em;
+    }
+
 	#premiumText h1 {
-		width: 30vw;
+		font-size: 1.5em;
 		margin: auto;
 		text-align: center;
 	}
+
+    .button {
+    margin-left: 2vw;
+
+    }
+
+   li a .button{
+        margin-top: 5vh;
+    }
 
 	#table {
 		display: flex;
@@ -319,9 +359,11 @@ footer ul {
 		width: 25vw;
 	}
 
-/*	#table li {
-		font-size: ;
-	}*/
+	#table li {
+		text-align: left;
+        font-size: .8em;
+
+	}
 
 
 	#table :hover {
@@ -375,7 +417,7 @@ footer ul {
 	}
 
 	#soonOn img {
-		max-width: 30vw;
+		max-width: 20vw;
 	}
 
 
@@ -383,6 +425,57 @@ footer ul {
 
 
 @media only screen and (min-width: 1024px) {
+
+
+
+    .upg {
+	height: 4em !important;
+	line-height: 4.5em;
+	font-size: 1.5em;
+	background-color: transparent;
+	text-stroke: 1px white;
+	-webkit-text-stroke: 1px white;
+	-moz-text-stroke: 1px white;
+
+}
+
+    #table li {
+	padding: 1em;
+	height: 2em;
+	background-color: rgba(256, 256, 256, 0.5);
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 1em;
+        text-align: center;
+
+
+
+}
+
+
+
+
+    #premiumText p {
+	font-family: 'Comfortaa', sans-serif;
+	text-align: center;
+	line-height: 2em;
+	padding: 1em;
+	margin: auto;
+        font-size: 1.2em;
+        width: 100%;
+
+
+}
+
+    #premiumText h1 {
+	font-family: 'Bowlby One SC', cursive;
+	font-size: 1.9em;
+	width: 50vw;
+	padding: 1em 0.5em;
+	margin: auto;
+	text-align: center;
+}
+
+
 
 	/*Desktop navigation*/
 	.hamburgerMenu {
@@ -427,13 +520,17 @@ footer ul {
 
 	/*footer*/
 
+    footer li {
+        font-size: 1em;
+    }
+
 	#soonOn img {
-		max-width: 25vw;
+		max-width:20vw;
 	}
 
-	.socialmedia img {
-		padding-top: 5em;
-	}
+    .socialmedia img {
+        padding: 2em 4%;
+    }
 
 }
 

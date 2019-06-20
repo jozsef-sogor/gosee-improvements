@@ -422,7 +422,7 @@ main h3 {
 #why {
   position: relative;
   bottom: 10vh;
-  font-size: 2.7em;
+  font-size: 2.5em;
 }
 
 .inspiration {
@@ -462,7 +462,7 @@ main h3 {
   grid-column: 1;
   z-index: 999;
   justify-self: center;
-  font-size: 2.7em;
+  font-size: 2.5em;
   align-self: center;
 }
 
@@ -598,7 +598,7 @@ main h3 {
   grid-column: 1;
   z-index: 999;
   justify-self: center;
-  font-size: 2.7em;
+  font-size: 2.5em;
   align-self: center;
 }
 
@@ -767,7 +767,7 @@ form input {
   font-family: 'Bowlby One SC', cursive;
   font-weight: 700;
   z-index: 999;
-  font-size: 1.7em;
+  font-size: 1.5em;
 }
 
 .support p {
@@ -1438,9 +1438,10 @@ footer ul {
 
   #pleasework {
     background-image: url(../graphics/background-big.svg);
-    background-position: 1% 118%;
+    background-position: 20% 126%;
     background-repeat: no-repeat;
     background-size: auto 80%;
+     
   }
 
   .sponsor1, .sponsor2, .sponsor3 {
@@ -1485,7 +1486,7 @@ footer ul {
   }
 
   .lock {
-    bottom: 19vw;
+    bottom: 13vw;
   }
 
     #soonOn img {

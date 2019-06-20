@@ -18,8 +18,27 @@ body {
     border: 2px solid #fff;
     border-radius: 10px;
     padding: .7em 1em;
-    max-width: 40%;
+    max-width: 65%;
     margin: auto;
+}
+
+.mobileNav img {
+	width: 55px;
+	padding: .5em;
+	position: fixed;
+	left: .4em;
+	top: -0.1em;
+}
+
+.header__images {
+	z-index: 999;
+	background-color: #1B0A3B;
+}
+
+.header__images--logo {
+	width: 55px;
+	padding: 1em;
+	padding-left: .7em;
 }
 
 .desktopNav {
@@ -30,7 +49,7 @@ body {
 .hamburgerMenu {
     z-index: 1006;
     position: absolute;
-    padding: 1.3em;
+    padding: 1em;
     right: 1px;
     z-index: 1010;
     font-size: 1.5em;
@@ -95,14 +114,14 @@ nav ul li a {
 }
 
 .header__images--logo {
-    width: 70px;
-    padding: 1em;
-    padding-left: 3.5em;
+   width: 55px;
+    padding: .7em;
+    padding-left: 1.5em;
 }
 
 #premiumText h1 {
     font-family: 'Bowlby One SC', cursive;
-    font-size: 1.9em;
+    font-size: 1.3em;
 
     padding: 1em 0.5em;
     text-align: center;
@@ -114,7 +133,7 @@ nav ul li a {
     text-align: center;
     line-height: 2em;
     padding: 1em;
-    font-size: 1.1em;
+    font-size: .8em;
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -123,7 +142,7 @@ nav ul li a {
 /* Part 3 styling - FAQ jQuery Slider - making the FAQ Slider responsive*/
 
 #container {
-    width: 60%;
+    
     margin: 30px auto;
     overflow: auto;
 }
@@ -131,7 +150,8 @@ nav ul li a {
 
 #container h2 {
     font-family: 'Bowlby One SC', cursive;
-    font-size: 1.5em;
+    font-size: 1.1em;
+    margin-left: 5%;
 
 
 }
@@ -194,7 +214,7 @@ h1 {
     font-family: 'Comfortaa';
     background: rgba(59, 30, 115, 0.15);
     font-weight: bold;
-    font-size: 120%;
+    font-size: .9em;
     border-bottom: 1px #ddd solid;
     cursor: pointer;
 
@@ -205,7 +225,7 @@ h1 {
     font-family: 'Comfortaa';
     background: rgba(59, 30, 115, 0.15);
     font-weight: bold;
-    font-size: 120%;
+    font-size: .9em;
     border-bottom: 1px #ddd solid;
     cursor: pointer;
 
@@ -217,6 +237,7 @@ h1 {
     background: white;
     display: none;
     color: black;
+    font-size: .8em;
 }
 
 .faq2 li.a {
@@ -224,6 +245,7 @@ h1 {
     background: white;
     display: none;
     color: black;
+        font-size: .8em;
 }
 
 .rotate {
@@ -269,8 +291,8 @@ footer a {
 }
 
 footer li {
-    font-size: 1.5em;
-    line-height: 3em;
+    font-size: .8em;
+    line-height: 1.7em;
 }
 
 footer li a:hover {
@@ -287,7 +309,7 @@ footer li a:active {
 
 .socialmedia img {
     max-height: 2.5em;
-    width: auto;
+    width: 30px;
     padding: 2em 8%;
 }
 
@@ -297,13 +319,63 @@ footer li a:active {
 }
 
 footer ul {
-    padding: 2em;
+    padding: 1.5em;
 }
 
 @media only screen and (min-width: 768px) {
 
-    #premiumText h1 {}
+ .header__images--logo {
+	width: 65px;
+	padding: 1em;
+	padding-left: 3.5em;
+}
 
+    
+    #container {
+    width: 60%;
+    margin: 30px auto;
+    overflow: auto;
+}
+    
+    
+    #premiumText h1 {
+        
+        font-size: 1.5em;
+    
+    }
+    
+    #premiumText p { 
+    font-size: 1em;
+    }
+    
+    #container h2 { 
+    font-size: 1.3em;
+    }
+    
+    
+    .faq li.q { 
+    
+    font-size: 1em;
+}
+    
+     .faq2 li.q { 
+    
+    font-size: 1em;
+}
+    
+     .faq li.a { 
+    
+    font-size: .9em;
+}
+      .faq2 li.a { 
+    
+    font-size: .9em;
+}
+    
+    
+    
+    
+    
     #table {
         display: flex;
         margin: auto;
@@ -363,9 +435,13 @@ footer ul {
     }
 
     #soonOn img {
-        max-width: 30vw;
+        max-width: 20vw;
     }
 
+    .notify {
+    max-width: 17%;
+    }
+    
 
 }
 
@@ -376,7 +452,20 @@ footer ul {
     .hamburgerMenu {
         display: none;
     }
+    
+    #premiumText h1 {
+    font-size: 1.9em;
+}
 
+    
+     
+    #premiumText p {
+    font-size: 1em;
+       width: 60%;
+        margin: auto;
+}
+    
+    
     .svg4desk {
         bottom: 25vw;
     }
@@ -388,6 +477,10 @@ footer ul {
         top: 1em;
     }
 
+    .notify {
+    max-width: 22%;
+}
+    
     .desktopNav ul {
         font-size: 1.2em;
     }
@@ -417,11 +510,12 @@ footer ul {
     /*footer*/
 
     #soonOn img {
-        max-width: 25vw;
+        max-width: 22vw;
     }
 
     .socialmedia img {
         padding-top: 5em;
+        padding: 2em 4%;
     }
 
 }
