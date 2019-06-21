@@ -767,7 +767,7 @@ form input {
 
 #submitBtn {
   cursor: not-allowed;
-  margin: 2em;
+  margin: 2em auto;
   color: rgba(0, 0, 0, 0.1);
   font-size: 1em;
   padding: .3em .5em;
@@ -985,17 +985,17 @@ footer ul {
     max-width: 20%;
 
   }
-    
+
     .support {
         margin-bottom: 5em;
     }
-    
-    
-    .header__images--logo { 
+
+
+    .header__images--logo {
     width: 70px;
     }
-    
-    
+
+
 
 
 
